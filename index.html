@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/fontawesome-free-6.5.1-web/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <img src="./asset/image/logo.png" class= "header__navbar-logo-img" alt="">
+                            <span>Quản lý thư viện trường</span>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+
+                        <!-- Search header -->
+                        <div class="header__search">
+                            <div class="header__search-btn">
+                                <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div type="text" class="header__search-input-wrap">
+                                <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm">
+                            </div>
+                            
+                        </div>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-regular fa-message"></i>
+                            </a>
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-regular fa-bell"></i>
+                            </a>
+                            <img src="./asset/image/cat2.jpg" class= "header__navbar-logo-img2" alt="">
+                            <span>Nhóm 4-66PM2</span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="container">
+            <div class="grid">
+                <div class="grid__row">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">Danh mục</h3>
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <div class="category-item-icon">
+                                        <i class="fa-solid fa-house"></i>
+                                    </div>
+                                    <a href="#" class="category-item__link">Trang chủ</a>
+                                </li>
+                                <li class="category-item">
+                                    <div class="category-item-icon">
+                                        <i class="fa-solid fa-book"></i>
+                                    </div>
+                                    <a href="#" class="category-item__link">Thư viện</a>
+                                </li>
+                                <li class="category-item">
+                                    <div class="category-item-icon">
+                                        <i class="fa-solid fa-book-open"></i>
+                                    </div>
+                                    <a href="#" class="category-item__link">Sách</a>
+                                </li>
+                                <li class="category-item">
+                                    <div class="category-item-icon">
+                                        <i class="fa-solid fa-list"></i>
+                                    </div>
+                                    <a href="#" class="category-item__link">Categories</a>
+                                </li>
+                                <li class="category-item">
+                                    <div class="category-item-icon">
+                                        <i class="fa-solid fa-users"></i>
+                                    </div>
+                                    <a href="#" class="category-item__link">Quản lý bạn đọc</a>
+                                </li>
+                                <li class="category-item">
+                                    <div class="category-item-icon">
+                                        <i class="fa-solid fa-chart-simple"></i>
+                                    </div>
+                                    <a href="#" class="category-item__link">Quản lý mượn trả</a>
+                                </li>
+                                <li class="category-item">
+                                    <div class="category-item-icon">
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <a href="#" class="category-item__link">Coupons</a>
+                                </li>
+                                <li class="category-item">
+                                    <div class="category-item-icon">
+                                        <i class="fa-solid fa-comment-dots"></i>
+                                    </div>
+                                    <a href="#" class="category-item__link">Đánh giá</a>
+                                </li>
+                            </ul>
+                            <h3 class="category__heading">Thông tin khác</h3>
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <div class="category-item-icon">
+                                        <i class="fa-regular fa-circle-question"></i>
+                                    </div>
+                                    <a href="#" class="category-item__link">Hướng dẫn sử dụng</a>
+                                </li>
+                                <li class="category-item">
+                                    <div class="category-item-icon">
+                                        <i class="fa-solid fa-chart-pie"></i>
+                                    </div>
+                                    <a href="#" class="category-item__link">Báo cáo thống kê</a>
+                                </li>
+                            </ul>
+                            <h3 class="category__heading">Cài đặt </h3>
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <div class="category-item-icon">
+                                        <i class="fa-regular fa-user"></i>
+                                    </div>
+                                    <a href="#" class="category-item__link">Cài đặt tài khoản</a>
+                                </li>
+                                <li class="category-item">
+                                    <div class="category-item-icon">
+                                        <i class="fa-solid fa-gear"></i>
+                                    </div>
+                                    <a href="#" class="category-item__link">Cài đặt chung</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+    
+    
+                    <div class="grid__column-10">
+                        <header class="container__heading">
+                            <div class="container__heading-a">Thư viện</div>
+                            <div class="container__heading__wrap">
+                                <div class="heading__wrap-export-btn">
+                                    <span>Xuất</span>
+                                </div>
+                                <div class="heading__wrap-add-btn">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <span>Thêm sách</span>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="main">
+                            <div class="main__heading">
+                                <div class="main__heading-wrap">
+                                    <div class="main__heading-wrap__filter">
+                                        <span>Lọc</span>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                    <div class="main__heading-wrap__search">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <span>Tìm ...</span>
+                                    </div>
+                                </div>
+                                <div class="main__heading-wrap">
+                                    <div class="main__heading-wrap__btn">
+                                        <button class="main__heading-wrap__btn-img btn-lock">
+                                            <i class="fa-solid fa-lock"></i>
+                                        </button>
+                                    </div>
+                                    <div class="main__heading-wrap__btn">
+                                        <button class="main__heading-wrap__btn-img btn-fix">
+                                            <i class="fa-solid fa-pen"></i>
+                                        </button>
+                                    </div>
+                                    <div class="main__heading-wrap__btn">
+                                        <button class="main__heading-wrap__btn-img btn-delete">
+                                            <i class="fa-solid fa-trash-can"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__content">
+                                <table class ="custom-table">
+                                    <thead>
+                                        <tr>
+                                          <th></th>
+                                          <th>Mã số sách</th>
+                                          <th>Tên sách</th>
+                                          <th>Tác giả</th>
+                                          <th>Mã số NXB</th>
+                                          <th>Mã loại sách</th>
+                                          <th>Năm SX</th>
+                                          <th>Lần xuất bản</th>
+                                          <th>Số lương</th>
+                                          <th>Nội dung tóm lược</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                <div class="content-select">
+                                                    <input type="checkbox" class="btn-select" id="checkbox1" onclick="myFunction">
+
+                                                    </input>
+                                                </div>
+                                            </th>
+                                            <th>0206166</th>
+                                            <th>Đắc nhân tâm</th>
+                                            <th>D.Carnegie</th>
+                                            <th>7777222</th>
+                                            <th>3927</th>
+                                            <th>2008</th>
+                                            <th>3</th>
+                                            <th>1800</th>
+                                            <th>Chữa lành tâm hồn</th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="content-select">
+                                                    <input type="checkbox" class="btn-select" id="checkbox1" onclick="myFunction">
+
+                                                    </input>
+                                                </div>
+                                            </th>
+                                            <th>0206166</th>
+                                            <th>Cuốn Theo Chiều Gió</th>
+                                            <th>Margaret Mitchell</th>
+                                            <th>7777222</th>
+                                            <th>2003</th>
+                                            <th>1963</th>
+                                            <th>1</th>
+                                            <th>1800</th>
+                                            <th>Chữa lành tâm hồn</th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="content-select">
+                                                    <input type="checkbox" class="btn-select" id="checkbox1" onclick="myFunction">
+
+                                                    </input>
+                                                </div>
+                                            </th>
+                                            <th>0206166</th>
+                                            <th>Nhà Giả Kim</th>
+                                            <th>Paulo Coelho</th>
+                                            <th>7777222</th>
+                                            <th>2992</th>
+                                            <th>1988</th>
+                                            <th>3</th>
+                                            <th>1800</th>
+                                            <th>Chữa lành tâm hồn</th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="content-select">
+                                                    <input type="checkbox" class="btn-select" id="checkbox1" onclick="myFunction">
+
+                                                    </input>
+                                                </div>
+                                            </th>
+                                            <th>0206166</th>
+                                            <th>Bố Già</th>
+                                            <th>Mario Puzo</th>
+                                            <th>7777222</th>
+                                            <th>3012</th>
+                                            <th>1972</th>
+                                            <th>2</th>
+                                            <th>1800</th>
+                                            <th>Chữa lành tâm hồn</th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="content-select">
+                                                    <input type="checkbox" class="btn-select" id="checkbox1" onclick="myFunction">
+
+                                                    </input>
+                                                </div>
+                                            </th>
+                                            <th>0206166</th>
+                                            <th>Ông Già Và Biển Cả</th>
+                                            <th>Ernest Hemingway</th>
+                                            <th>7777222</th>
+                                            <th>0823</th>
+                                            <th>1951</th>
+                                            <th>2</th>
+                                            <th>1800</th>
+                                            <th>Chữa lành tâm hồn</th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="content-select">
+                                                    <input type="checkbox" class="btn-select" id="checkbox1" onclick="myFunction">
+
+                                                    </input>
+                                                </div>
+                                            </th>
+                                            <th>0206166</th>
+                                            <th>Hoàng Tử Bé</th>
+                                            <th>Antoine de Saint-Exupéry</th>
+                                            <th>7777222</th>
+                                            <th>2992</th>
+                                            <th>1867</th>
+                                            <th>1</th>
+                                            <th>1800</th>
+                                            <th>Chữa lành tâm hồn</th>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="content-select">
+                                                    <input type="checkbox" class="btn-select" id="checkbox1" onclick="myFunction">
+
+                                                    </input>
+                                                </div>
+                                            </th>
+                                            <th>0206166</th>
+                                            <th>Chiến Tranh Và Hòa Bình</th>
+                                            <th>Leo Tolstoy</th>
+                                            <th>7777222</th>
+                                            <th>2992</th>
+                                            <th>2008</th>
+                                            <th>1</th>
+                                            <th>1800</th>
+                                            <th>Chữa lành tâm hồn</th>
+                                        </tr>
+                                    </tbody>
+                                </table>                                      
+                            </div>
+                        </div>
+                        <footer class="container__footer">
+                            <div class="container__footer-paging">
+                                <i class="fa-solid fa-arrow-left"></i>
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span>5</span>
+                                <span>6</span>
+                                <span>...</span>
+                                <span>24</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                            <div class="container__footer-count">
+                                <span>274 Kết quả</span>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
