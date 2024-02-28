@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./asset/css/main.css">
     <link rel="stylesheet" href="./asset/fontawesome-free-6.5.1-web/css/all.min.css">
 </head>
+
 <body>
     <div class="app">
         <div class="header">
@@ -168,8 +169,8 @@
                                 </div>
                                 <div class="main__heading-wrap">
                                     <div class="main__heading-wrap__btn">
-                                        <button class="main__heading-wrap__btn-img btn-lock">
-                                            <i class="fa-solid fa-lock"></i>
+                                        <button class="main__heading-wrap__btn-img btn-lock" id="edit-toggle-btn">
+                                           <i class="fa-solid fa-lock"></i>
                                         </button>
                                     </div>
                                     <div class="main__heading-wrap__btn">
@@ -204,7 +205,7 @@
                                         <tr>
                                             <th>
                                                 <div class="content-select">
-                                                    <input type="checkbox" class="btn-select" id="checkbox1" onclick="myFunction">
+                                                    <input type="checkbox" class="btn-select" id="checkbox1" onclick="">
 
                                                     </input>
                                                 </div>
@@ -222,7 +223,7 @@
                                         <tr>
                                             <th>
                                                 <div class="content-select">
-                                                    <input type="checkbox" class="btn-select" id="checkbox1" onclick="myFunction">
+                                                    <input type="checkbox" class="btn-select" id="checkbox1" onclick="">
 
                                                     </input>
                                                 </div>
@@ -240,7 +241,7 @@
                                         <tr>
                                             <th>
                                                 <div class="content-select">
-                                                    <input type="checkbox" class="btn-select" id="checkbox1" onclick="myFunction">
+                                                    <input type="checkbox" class="btn-select" id="checkbox1" onclick="">
 
                                                     </input>
                                                 </div>
@@ -258,7 +259,7 @@
                                         <tr>
                                             <th>
                                                 <div class="content-select">
-                                                    <input type="checkbox" class="btn-select" id="checkbox1" onclick="myFunction">
+                                                    <input type="checkbox" class="btn-select" id="checkbox1" onclick="">
 
                                                     </input>
                                                 </div>
@@ -276,7 +277,7 @@
                                         <tr>
                                             <th>
                                                 <div class="content-select">
-                                                    <input type="checkbox" class="btn-select" id="checkbox1" onclick="myFunction">
+                                                    <input type="checkbox" class="btn-select" id="checkbox1" onclick="">
 
                                                     </input>
                                                 </div>
@@ -294,7 +295,7 @@
                                         <tr>
                                             <th>
                                                 <div class="content-select">
-                                                    <input type="checkbox" class="btn-select" id="checkbox1" onclick="myFunction">
+                                                    <input type="checkbox" class="btn-select" id="checkbox1" onclick="">
 
                                                     </input>
                                                 </div>
@@ -312,7 +313,7 @@
                                         <tr>
                                             <th>
                                                 <div class="content-select">
-                                                    <input type="checkbox" class="btn-select" id="checkbox1" onclick="myFunction">
+                                                    <input type="checkbox" class="btn-select" id="checkbox1" onclick="">
 
                                                     </input>
                                                 </div>
@@ -353,5 +354,46 @@
             </div>
         </div>
     </div>
+
+    <div id="confirmation-modal" class="confirmation-modal">
+        <div class="confirmation-modal-content">
+            <h2>Khóa sách</h2>
+            <p>Bạn có chắc chắn khóa sách?</p>
+            <button id="confirm-yes">Khóa</button>
+            <button id="confirm-no">Hủy</button>
+        </div>
+    </div>
+
+
+    
 </body>
 </html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function () {
+    var isEditing = false;
+
+    $('#edit-toggle-btn').on('click', function () {
+        if (!isEditing) {
+            $(this).html('<i class="fa-solid fa-lock"></i>');
+            $('.btn-select').prop('disabled', false);
+            $('.btn-select').closest('tr').removeClass('disabled-row');
+            isEditing = true;
+        } else {
+            $('#confirmation-modal').css('display', 'block');
+        }
+        return false;
+    });
+    $('#confirm-yes').on('click', function () {
+        $('.btn-select:checked').prop('disabled', true);
+        $('.btn-select:disabled').closest('tr').addClass('disabled-row');
+        $('#confirmation-modal').css('display', 'none');
+        $('#edit-toggle-btn').html('<i class="fa-solid fa-lock-open"></i>');
+        isEditing = false;
+    });
+    $('#confirm-no').on('click', function () {
+        $('#confirmation-modal').css('display', 'none');
+    });
+});
+
+</script>
